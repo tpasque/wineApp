@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Consumer app</title>
+  </head>
+  <body>
+    <base href="/">
+    <div ng-controller="MainController">
+        Welcome to the FyneWine
+
+        <a href="/wine">Wine</a>
+        <a href="/wine/1">Wine One</a>
+        
+    </div>
+
+
+
+   <div ng-view></div>
+
+  </body>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-resource.js"></script>
+
+
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
+</html>
