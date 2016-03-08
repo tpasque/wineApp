@@ -1,0 +1,15 @@
+{
+  "firebase": "wineapptpasque",
+  "rewrites": [
+  {
+    "source": "**/**/**",
+    "destination": "/index.html"
+  }
+],
+  "public": "app",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
