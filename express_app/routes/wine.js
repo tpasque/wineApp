@@ -5,13 +5,22 @@ var knex = require("../db/knex");
 
 
 var Wine = function(){
-  return knex('wine');
+  return knex('wines');
 }
 
+var Categories = function () {
+  return knex('categories');
+}
 
-/* GET home page. */
+var Tastes_Like = function () {
+  return knex('tastes_like');
+}
+
 router.get('/', function(req, res, next) {
-  res.json('index', { title: 'Express' });
+  Wine().select().then(function (payload) {
+    res.json(payload)
+    console.log(payload);
+  })
 });
 
 module.exports = router;
